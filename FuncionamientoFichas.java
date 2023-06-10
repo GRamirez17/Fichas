@@ -1,9 +1,10 @@
 package Fichas;
 
-public class FuncionamientoFichas{
+public class FuncionamientoFichas {
     private String nombre;
     private int rango;
-    private boolean EsBomba,EsTierra;
+    private boolean EsBomba;
+    private boolean EsTierra;
 
     public FuncionamientoFichas(String nombre,int rango,boolean EsBomba,boolean EsTierra){
         this.nombre=nombre;
@@ -44,7 +45,7 @@ public class FuncionamientoFichas{
     public void atacar(FuncionamientoFichas FichaObjetivo){
         if(PuedeAtacar(FichaObjetivo)){
             System.out.println(nombre+" atacó a "+FichaObjetivo.getNombre());
-            if(rango>FichaObjetivo.getRango()) {
+            if(rango>FichaObjetivo.getRango()){
                 System.out.println(nombre+" destruyó a "+FichaObjetivo.getNombre());
             }else if(rango<FichaObjetivo.getRango()){
                 System.out.println(nombre+" fue destruido por "+FichaObjetivo.getNombre());
@@ -53,5 +54,4 @@ public class FuncionamientoFichas{
             }
         }
     }
-}
 
