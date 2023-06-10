@@ -109,7 +109,7 @@ public class ImagenFichas {
         });
 
         ImagenFichas FichaHeroe=new ImagenFichas("Héroe",RutasImagenesFichas.get(1)[0],"Héroe");
-        ImagenFichas FichaVillano= new ImagenFichas("Villano",RutasImagenesFichas.get(2)[0], "Villano");
+        ImagenFichas FichaVillano=new ImagenFichas("Villano",RutasImagenesFichas.get(2)[0], "Villano");
 
         System.out.println(FichaHeroe.getNombre());
 
